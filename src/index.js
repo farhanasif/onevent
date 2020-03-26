@@ -36,8 +36,8 @@ const middlewares = [
 const store = createStore(rootReducer,
   compose(
     applyMiddleware(...middlewares),
-    // reactReduxFirebase(fbConfig), // redux binding for firebase
-    reduxFirestore(fbConfig) // redux bindings for firestore
+    reduxFirestore(fbConfig), // redux bindings for firestore
+    //reactReduxFirebase(fbConfig, {attachAuthIsReady: true}) // redux binding for firebase
   )
 );
 
