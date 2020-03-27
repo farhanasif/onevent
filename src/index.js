@@ -45,7 +45,9 @@ const rrfProps = {
      firebase,
      config: fbConfig,
      dispatch: store.dispatch,
-     createFirestoreInstance // <- needed if using firestore
+     createFirestoreInstance, // <- needed if using firestore
+     userProfile: 'users', // where profiles are stored in database
+     useFirestoreForProfile: true // use Firestore for profile instead of RTDB
 }
 
 ReactDOM.render(

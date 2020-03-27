@@ -14,7 +14,8 @@ var firebaseConfig = {
     storageBucket: "react-redux-c02aa.appspot.com",
     messagingSenderId: "662703363063",
     appId: "1:662703363063:web:77d8bf71047094ca09d4f2",
-    measurementId: "G-0NYDD7N72Y"
+    measurementId: "G-0NYDD7N72Y",
+    
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
