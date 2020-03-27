@@ -4,6 +4,7 @@ import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 import BounceLoader from 'react-spinners/BounceLoader';
+import moment from 'moment';
 
 function ProjectDetails(props) {
     const { project, auth } = props;
@@ -20,8 +21,8 @@ function ProjectDetails(props) {
                             <p>{project.content}</p>
                         </div>
                         <div className="card-action grey lighten-4 grey-text">
-                            <div>posted by {project.authorFirstName} {project.authorLastName}</div>
-                            <div>2nd February, 2020 2pm</div>
+                            <div className="light-green-text lighten-5">posted by {project.authorFirstName} {project.authorLastName}</div>
+                            <div className="light-green-text lighten-5">{moment(project.createdAt.toDate()).calendar()}</div>
                         </div>
                     </div>
                 </div>
