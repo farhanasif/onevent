@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
+import BounceLoader from 'react-spinners/BounceLoader';
 
 function ProjectDetails(props) {
     const { project, auth } = props;
@@ -28,8 +29,11 @@ function ProjectDetails(props) {
         }
         else{
             return (
-                <div className="container section project-details">
-                    <p>Loading...........</p>
+                <div className="container centered section project-details">
+                    <BounceLoader
+                        size={50}
+                        color={"#ec407a"}
+                    />
                 </div>
             )
         }

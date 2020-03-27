@@ -11,6 +11,8 @@ import { createFirestoreInstance, reduxFirestore, getFirestore } from 'redux-fir
 import { ReactReduxFirebaseProvider, isLoaded, getFirebase } from 'react-redux-firebase';
 import firebase from 'firebase/app'
 import fbConfig from './config/fbConfig'
+import BounceLoader from 'react-spinners/BounceLoader';
+
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
 const fireConfig = {
@@ -54,7 +56,16 @@ const rrfProps = {
 
 function AuthIsLoaded({ children }) {
   const auth = useSelector(state => state.firebase.auth)
-  if (!isLoaded(auth)) return <div>Loading Screen...</div>;
+  if (!isLoaded(auth)){
+    return (
+      <div className="container centered section project-details">
+        <BounceLoader
+            size={50}
+            color={"#ec407a"}
+        />
+      </div>
+    )
+  }
       return children
 }
 
