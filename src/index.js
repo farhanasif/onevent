@@ -5,10 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './store/reducers/rootReducer';
-import { Provider } from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createFirestoreInstance, reduxFirestore, getFirestore } from 'redux-firestore';
-import { ReactReduxFirebaseProvider, reactReduxFirebase, getFirebase } from 'react-redux-firebase';
+import { ReactReduxFirebaseProvider, isLoaded, getFirebase } from 'react-redux-firebase';
 import firebase from 'firebase/app'
 import fbConfig from './config/fbConfig'
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
@@ -21,7 +21,9 @@ const fireConfig = {
   storageBucket: "react-redux-c02aa.appspot.com",
   messagingSenderId: "662703363063",
   appId: "1:662703363063:web:77d8bf71047094ca09d4f2",
-  measurementId: "G-0NYDD7N72Y"
+  measurementId: "G-0NYDD7N72Y",
+  userProfile: 'users',
+  useFirestoreForProfile: true
 };
 
 try {
@@ -47,13 +49,21 @@ const rrfProps = {
      dispatch: store.dispatch,
      createFirestoreInstance, // <- needed if using firestore
      userProfile: 'users', // where profiles are stored in database
-     useFirestoreForProfile: true // use Firestore for profile instead of RTDB
+     //useFirestoreForProfile: true // use Firestore for profile instead of RTDB
+}
+
+function AuthIsLoaded({ children }) {
+  const auth = useSelector(state => state.firebase.auth)
+  if (!isLoaded(auth)) return <div>Loading Screen...</div>;
+      return children
 }
 
 ReactDOM.render(
   <Provider store={store}>
     <ReactReduxFirebaseProvider {...rrfProps}>
+      <AuthIsLoaded>
         <App />
+      </AuthIsLoaded>
     </ReactReduxFirebaseProvider>
   </Provider>,
   document.getElementById('root')
