@@ -47,7 +47,7 @@ const store = createStore(rootReducer,
 
 const rrfProps = {
      firebase,
-     config: fbConfig,
+     config: fireConfig,
      dispatch: store.dispatch,
      createFirestoreInstance, // <- needed if using firestore
      userProfile: 'users', // where profiles are stored in database
@@ -58,7 +58,7 @@ function AuthIsLoaded({ children }) {
   const auth = useSelector(state => state.firebase.auth)
   if (!isLoaded(auth)){
     return (
-      <div className="container centered section project-details">
+      <div className="container centered">
         <BounceLoader
             size={50}
             color={"#ec407a"}
