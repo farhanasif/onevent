@@ -1,13 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Notifications extends Component {
-    render(){
-        return(
-            <div className="dashboard container">
-                <p>Notifications</p>
+const Notifications = (props) => {
+    return(
+        <div className="section">
+            <div className="card z-depth-3">
+                <div className="card-content">
+                    <span className="card-title">Notifications</span>
+                    <ul className="collection">
+                        <li className="collection-item">Notifications</li>
+                        <li className="collection-item">Notifications</li>
+                        <li className="collection-item">Notifications</li>
+                        <li className="collection-item">Notifications</li>
+                    </ul>
+                </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Notifications;

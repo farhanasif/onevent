@@ -15,7 +15,7 @@ function ProjectDetails(props) {
         if(project){
             return(
                 <div className="container section project-details">
-                    <div className="card pink lighten-1 z-depth-0">
+                    <div className="card pink lighten-1 z-depth-3">
                         <div className="card-content white-text">
                             <span className="card-title">{project.title}</span>
                             <p>{project.content}</p>
