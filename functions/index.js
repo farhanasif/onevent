@@ -10,6 +10,6 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
  response.send("Hello from Firebase!");
 });
 
-// exports.projectCreated = functions.firestore.document('projects/{projectId}').onCreate((doc) => {
+exports.projectCreated = functions.firestore.document('projects/{projectId}').onCreate((doc) => {
     
-// })
+})
