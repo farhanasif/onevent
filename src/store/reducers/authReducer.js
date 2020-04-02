@@ -1,3 +1,12 @@
+import Swal from 'sweetalert2'
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+});
+
 const initState = {
     authError: null,
     errDetails: null
@@ -6,7 +15,11 @@ const initState = {
 const authReducer = (state = initState, action) => {
     switch(action.type){
         case 'LOGIN_SUCCESS':
-            console.log('login success');
+            Toast.fire({
+                icon: 'success',
+                type: 'success',
+                title: 'User login successfully.'
+            })
             return {
                 ...state,
                 authError: null,
