@@ -1,26 +1,26 @@
-[debug] [2020-04-01T08:11:33.908Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T08:11:33.911Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions --debug
-[debug] [2020-04-01T08:11:33.911Z] CLI Version:   7.16.1
-[debug] [2020-04-01T08:11:33.911Z] Platform:      linux
-[debug] [2020-04-01T08:11:33.912Z] Node Version:  v12.16.1
-[debug] [2020-04-01T08:11:33.912Z] Time:          Wed Apr 01 2020 14:11:33 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-01T08:11:33.912Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T08:11:33.913Z] 
-[debug] [2020-04-01T08:11:33.922Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T08:11:33.923Z] > authorizing via signed-in user
-[debug] [2020-04-01T08:11:33.923Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-01T08:11:33.927Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-04-01T08:11:33.928Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2020-04-02T15:19:23.451Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T15:19:23.453Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-02T15:19:23.453Z] CLI Version:   7.16.1
+[debug] [2020-04-02T15:19:23.453Z] Platform:      linux
+[debug] [2020-04-02T15:19:23.453Z] Node Version:  v12.16.1
+[debug] [2020-04-02T15:19:23.454Z] Time:          Thu Apr 02 2020 21:19:23 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-02T15:19:23.454Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T15:19:23.454Z] 
+[debug] [2020-04-02T15:19:23.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-02T15:19:23.460Z] > authorizing via signed-in user
+[debug] [2020-04-02T15:19:23.460Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-02T15:19:23.462Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-02T15:19:23.462Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2020-04-01T08:11:34.316Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T08:11:34.370Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+[debug] [2020-04-02T15:19:24.605Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:19:24.658Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
 
-[debug] [2020-04-01T08:11:35.947Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:19:26.842Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'react-redux-c02aa'...
 [info] 
 [info] i  deploying functions
-[debug] [2020-04-01T08:11:41.226Z] > [functions] package.json contents: {
+[debug] [2020-04-02T15:19:41.357Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -43,164 +43,28 @@
   "private": true
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-01T08:11:41.228Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+[debug] [2020-04-02T15:19:41.359Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
  
-[debug] [2020-04-01T08:11:41.229Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+[debug] [2020-04-02T15:19:41.360Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
  
-[debug] [2020-04-01T08:11:43.324Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T08:11:43.429Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:19:44.512Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:19:47.183Z] <<< HTTP RESPONSE 200
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-01T08:11:43.432Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+[debug] [2020-04-02T15:19:47.186Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
  
-[debug] [2020-04-01T08:11:43.968Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:19:48.119Z] <<< HTTP RESPONSE 200
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-01T08:11:43.974Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+[debug] [2020-04-02T15:19:48.124Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
  
-[debug] [2020-04-01T08:11:44.753Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.86 KB) for uploading
-[debug] [2020-04-01T08:11:45.284Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+[debug] [2020-04-02T15:19:50.563Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (26.93 KB) for uploading
+[debug] [2020-04-02T15:19:51.184Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
  
-[debug] [2020-04-01T08:11:46.615Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T08:11:46.617Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/dc742404-8916-44da-8b04-e7b78bca3105.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585730506&Signature=q6Phqtne1Vk9DvscrutSfAa%2BXNIyQQu%2FPRkdCowt2wsecJyRN60CWMya0jf%2BZnBDXJrGugQkUJK1oi1E1rI7oEKtcHOwspTAn%2F8qH6BcwcRziuDvnXRKxq7pNTXIPL31PxoqFepgsJqJtL7kRkVBZnVVbB5ALNupTtudW1sylWs7H%2Fyn7nQ022PLpP0mE9s1gCIyf%2FGn%2FZDrBJpNkcb%2FHMjaAOgwi3vjf2n8nFe70YeOS%2BMAXmiQfE%2FUx04A37CgFx8DiYW%2Brys5iBCW%2FWhssuoyDcLRd4EVN5IfVUU3XOOnxGOojJ8%2FH5QZiVMYeLChwibkJid0NwFZpE2ORlWX5w%3D%3D  
- <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T08:12:56.990Z] Error: read ECONNRESET
-    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
-[error] 
-[error] Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T08:57:25.315Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T08:57:25.319Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions --debug
-[debug] [2020-04-01T08:57:25.319Z] CLI Version:   7.16.1
-[debug] [2020-04-01T08:57:25.319Z] Platform:      linux
-[debug] [2020-04-01T08:57:25.319Z] Node Version:  v12.16.1
-[debug] [2020-04-01T08:57:25.320Z] Time:          Wed Apr 01 2020 14:57:25 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-01T08:57:25.320Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T08:57:25.320Z] 
-[debug] [2020-04-01T08:57:25.327Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T08:57:25.327Z] > authorizing via signed-in user
-[debug] [2020-04-01T08:57:25.328Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-01T08:57:25.332Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-04-01T08:57:25.332Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-04-01T08:57:25.784Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T08:57:25.838Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-01T08:57:27.435Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'react-redux-c02aa'...
-[info] 
-[info] i  deploying functions
-[debug] [2020-04-01T08:57:30.106Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "8"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.6.0",
-    "firebase-functions": "^3.3.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.1.6"
-  },
-  "private": true
-}
-[info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-01T08:57:30.107Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
- 
-[debug] [2020-04-01T08:57:30.108Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
- 
-[debug] [2020-04-01T08:57:32.021Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T08:57:32.064Z] <<< HTTP RESPONSE 200
-[info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-01T08:57:32.066Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
- 
-[debug] [2020-04-01T08:57:32.625Z] <<< HTTP RESPONSE 200
-[info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-01T08:57:32.629Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
- 
-[debug] [2020-04-01T08:57:34.540Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.94 KB) for uploading
-[debug] [2020-04-01T08:57:34.741Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
- 
-[debug] [2020-04-01T08:57:36.405Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T08:57:36.407Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/f0d76d6f-a674-4ed9-b7a2-e6a468ea06a6.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585733256&Signature=Ajj%2B%2BLEjaM4JwFf%2F5vecYCffCGrTBBtduHsXWNEX%2FIEMHVnJ78zxka6nVEnKJY%2BRUblIrPz9jwZ%2FYRdZ3qEjS1sIJx4GCDX5MNNGqFhifw4OmGN5ZOdBTTIr7RnRBjlZK4xfP68golH8eKVYhf%2BX%2B5TjWGsMJvZFxEEClsfjpiftxxcryAQRXyUT26lztKteFyxhkmetpvoAG26nfU15EKN%2BXuSnZDMU1uVk5mO8%2F8KoHFSCja2Qf2QqJOyuKF8%2FGdVyTp%2FP4sWnMuBoAg2KxCjkjsMgg7v%2BSnk6%2BZT2fplMV%2B%2FPD8Ve1JyRlSMS8UA5c3erEB6KDff0A71FYnZOCA%3D%3D  
- <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T08:58:58.330Z] Error: read ECONNRESET
-    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
-[error] 
-[error] Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T09:03:40.424Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:03:40.427Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions --debug
-[debug] [2020-04-01T09:03:40.428Z] CLI Version:   7.16.1
-[debug] [2020-04-01T09:03:40.428Z] Platform:      linux
-[debug] [2020-04-01T09:03:40.428Z] Node Version:  v12.16.1
-[debug] [2020-04-01T09:03:40.428Z] Time:          Wed Apr 01 2020 15:03:40 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-01T09:03:40.429Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:03:40.429Z] 
-[debug] [2020-04-01T09:03:40.435Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T09:03:40.436Z] > authorizing via signed-in user
-[debug] [2020-04-01T09:03:40.436Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-01T09:03:40.439Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-01T09:03:55.648Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'react-redux-c02aa'...
-[info] 
-[info] i  deploying functions
-[debug] [2020-04-01T09:04:02.170Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "8"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.6.0",
-    "firebase-functions": "^3.3.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.1.6"
-  },
-  "private": true
-}
-[info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-01T09:04:02.173Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
- 
-[debug] [2020-04-01T09:04:02.175Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
- 
-[debug] [2020-04-01T09:04:04.188Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:04:04.328Z] <<< HTTP RESPONSE 200
-[info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-01T09:04:04.330Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
- 
-[debug] [2020-04-01T09:04:04.886Z] <<< HTTP RESPONSE 200
-[info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-01T09:04:04.893Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
- 
-[debug] [2020-04-01T09:04:05.851Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.94 KB) for uploading
-[debug] [2020-04-01T09:04:06.010Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
- 
-[debug] [2020-04-01T09:04:11.177Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:04:11.179Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/8bd3f491-e748-4759-8b55-34a09c9cf7d9.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585733650&Signature=RWWcU1A0HB2PGcctNb5TkvQfJANILcYWXYj7D4%2FBUFKkx9rdKPwHxTE2omk4bsGYDZRFEwY9nhdDhn0KwXf61otwxeS3%2FGb1XBzly%2FvjJ46iqtlyYvPg9%2FqKK2%2B6nMdEZYKgHHHBSHviUliDnvyYUdQU8ZyctFb79%2F7tnV9ZYvCYsKuRV2MmDmOzO80%2B4L6vWPsc1CwHheBKEd31yD0lM8EpW6c9LKgNiNx6DpOBemtka1TbA6Z3fzlIRI7l4N7a6ge9z96ewwYq2zj2XtecV8jMTQr%2FgV3tnqZi6%2FQFO%2Ff30dbXnl0KBA8iRyRhAVArTnTA9dlBjf8st9sUyMSJ4Q%3D%3D  
+[debug] [2020-04-02T15:19:52.847Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:19:52.849Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/03cf9497-0aca-4783-8285-52ef06f827c7.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585842592&Signature=Jg61cfXty5%2Bs78ZJwN2GHQiXpD82%2FW3EyrW3zdpY1EjuYkIdq%2FfYpgyY6o59g7wUMeI4FVouxu0Bh7W2FIuYyXufKgeYG4a9Ar0k%2FsCJIA1SMvCM2IewgHT5pMSHJIXSnBk1Ud0NvYTqyhC02CU8yc18bQ4Gdyb84Fe92RkpPWL2TdzAH4NW%2FpI%2B5KJ58ksXmdcTXX6lLW84ElSRt1ItMSZAd%2FBR14OBC6YPwK8IR0SE%2BnTwri6vV82JYtFNgey5QER13cJIqPrFs5LP3NJy3F%2Bnly0ota0eZuv6Bg%2FEKCl2j4PoWmbSIfEapK%2BZL7u%2FXp%2FiK6oHmDR4DqQNVQLgtw%3D%3D  
  <request body omitted>
 [warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-01T09:05:00.949Z] Error: Client network socket disconnected before secure TLS connection was established
+[debug] [2020-04-02T15:20:03.542Z] Error: Client network socket disconnected before secure TLS connection was established
     at connResetException (internal/errors.js:604:14)
     at TLSSocket.onConnectEnd (_tls_wrap.js:1513:19)
     at Object.onceWrapper (events.js:417:28)
@@ -210,25 +74,25 @@
     at processTicksAndRejections (internal/process/task_queues.js:84:21)
 [error] 
 [error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-01T09:07:06.342Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:07:06.344Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-01T09:07:06.344Z] CLI Version:   7.16.1
-[debug] [2020-04-01T09:07:06.344Z] Platform:      linux
-[debug] [2020-04-01T09:07:06.344Z] Node Version:  v12.16.1
-[debug] [2020-04-01T09:07:06.345Z] Time:          Wed Apr 01 2020 15:07:06 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-01T09:07:06.345Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:07:06.345Z] 
-[debug] [2020-04-01T09:07:06.351Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T09:07:06.351Z] > authorizing via signed-in user
-[debug] [2020-04-01T09:07:06.351Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-01T09:07:06.354Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+[debug] [2020-04-02T15:28:26.537Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T15:28:26.539Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-02T15:28:26.539Z] CLI Version:   7.16.1
+[debug] [2020-04-02T15:28:26.539Z] Platform:      linux
+[debug] [2020-04-02T15:28:26.539Z] Node Version:  v12.16.1
+[debug] [2020-04-02T15:28:26.539Z] Time:          Thu Apr 02 2020 21:28:26 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-02T15:28:26.539Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T15:28:26.539Z] 
+[debug] [2020-04-02T15:28:26.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-02T15:28:26.546Z] > authorizing via signed-in user
+[debug] [2020-04-02T15:28:26.546Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-02T15:28:26.548Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
 
-[debug] [2020-04-01T09:07:08.643Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:28:29.855Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'react-redux-c02aa'...
 [info] 
 [info] i  deploying functions
-[debug] [2020-04-01T09:07:11.301Z] > [functions] package.json contents: {
+[debug] [2020-04-02T15:28:31.397Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -251,221 +115,28 @@
   "private": true
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-01T09:07:11.302Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+[debug] [2020-04-02T15:28:31.399Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
  
-[debug] [2020-04-01T09:07:11.303Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+[debug] [2020-04-02T15:28:31.399Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
  
-[debug] [2020-04-01T09:07:14.097Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:07:14.555Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:28:34.245Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:28:34.924Z] <<< HTTP RESPONSE 200
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-01T09:07:14.557Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+[debug] [2020-04-02T15:28:34.926Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
  
-[debug] [2020-04-01T09:07:16.051Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:28:36.026Z] <<< HTTP RESPONSE 200
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-01T09:07:16.059Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+[debug] [2020-04-02T15:28:36.032Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
  
-[debug] [2020-04-01T09:07:18.703Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.94 KB) for uploading
-[debug] [2020-04-01T09:07:18.854Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+[debug] [2020-04-02T15:28:38.445Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (26.93 KB) for uploading
+[debug] [2020-04-02T15:28:38.590Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
  
-[debug] [2020-04-01T09:07:20.932Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:07:20.933Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/bc1077cb-cea4-4c99-8c73-24f054105d48.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585733840&Signature=iDT%2BRO9pcFaXsDaoaEVK9XuZU9lePfyq5u9eSDZK2P56LF7k9G9r2a7M7X27E5r56XB8OB4MkPWVAdw5Fs8BhUBXMLuYkgWBbo7kxwFS%2Fwg%2BdGCBaZFChfQ48ryhUsJq1Nl7wVZ3DDsfP%2FtXw78HB27j9Iz4R9A6uFnvmn2eu4NuvzdvMEFLp39wtGobDvEYbU9NuzPgWRZh1V7cxPgxY0NgvQiTxmkv9U1qnl8%2BY1NjINYP2%2FGpmo6wxWZGDaHbE%2BEGcnm48XlZe7VhiZxCBXeGnsBNAWbrZJEs7kWg6sgv0gnFnF7Dp2zpHrn%2BZvtnvJWyFS%2FFYTyWcpSVimX%2BwQ%3D%3D  
- <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T09:07:59.806Z] Error: read ECONNRESET
-    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
-[error] 
-[error] Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T09:09:50.788Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:09:50.793Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-01T09:09:50.793Z] CLI Version:   7.16.1
-[debug] [2020-04-01T09:09:50.793Z] Platform:      linux
-[debug] [2020-04-01T09:09:50.793Z] Node Version:  v12.16.1
-[debug] [2020-04-01T09:09:50.794Z] Time:          Wed Apr 01 2020 15:09:50 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-01T09:09:50.794Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:09:50.794Z] 
-[debug] [2020-04-01T09:09:50.806Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T09:09:50.806Z] > authorizing via signed-in user
-[debug] [2020-04-01T09:09:50.807Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-01T09:09:50.809Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-01T09:09:52.865Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'react-redux-c02aa'...
-[info] 
-[info] i  deploying functions
-[debug] [2020-04-01T09:09:56.356Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "8"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.6.0",
-    "firebase-functions": "^3.3.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.1.6"
-  },
-  "private": true
-}
-[info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-01T09:09:56.357Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
- 
-[debug] [2020-04-01T09:09:56.357Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
- 
-[debug] [2020-04-01T09:10:02.122Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:10:02.937Z] <<< HTTP RESPONSE 200
-[info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-01T09:10:02.940Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
- 
-[debug] [2020-04-01T09:10:04.370Z] <<< HTTP RESPONSE 200
-[info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-01T09:10:04.377Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
- 
-[debug] [2020-04-01T09:10:06.773Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.94 KB) for uploading
-[debug] [2020-04-01T09:10:06.932Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
- 
-[debug] [2020-04-01T09:10:08.946Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:10:08.949Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/872ea17e-9c83-4bb0-af23-5502b97e6be2.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585734008&Signature=KgD7kxtTgfzbmpO4B8JmybxJiIA6dSof1kNS%2BOI8tcgF4NNUbz4MiYTgd7im1Dsjl9h1QAn77sQ91Gcij4Re2II0hU4VDgScvjrt2Hj2IGX%2F66GWD1ezPkhs8TLcQmbj8cGF4XvK35%2FMkclaEBvO7tk3yTDiidWmZfP%2FIGsjqsEmASb%2FfoUWLhZuDcJgaK2VSQShfhA3IsCwhOXwWdpIVkyenOl6zj04WW4HaXzM2WU5XKBZmkp8YY%2BEhPEZUDWk0gULtyTtwq2fJTdPpoj7LbSeIP%2Ft%2F4Ibj5xYYjMGEc57VAx5es5f8UIEICNzDVHLHzgT%2FgF0kh4uA9NfJ094LQ%3D%3D  
- <request body omitted>
-[debug] [2020-04-01T09:10:24.053Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:10:24.055Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-01T09:10:24.055Z] CLI Version:   7.16.1
-[debug] [2020-04-01T09:10:24.055Z] Platform:      linux
-[debug] [2020-04-01T09:10:24.055Z] Node Version:  v12.16.1
-[debug] [2020-04-01T09:10:24.056Z] Time:          Wed Apr 01 2020 15:10:24 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-01T09:10:24.058Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:10:24.058Z] 
-[debug] [2020-04-01T09:10:24.068Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T09:10:24.068Z] > authorizing via signed-in user
-[debug] [2020-04-01T09:10:24.069Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-01T09:10:24.072Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-01T09:10:25.990Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'react-redux-c02aa'...
-[info] 
-[info] i  deploying functions
-[debug] [2020-04-01T09:10:27.375Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "8"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.6.0",
-    "firebase-functions": "^3.3.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.1.6"
-  },
-  "private": true
-}
-[info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-01T09:10:27.376Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
- 
-[debug] [2020-04-01T09:10:27.377Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
- 
-[debug] [2020-04-01T09:10:29.369Z] <<< HTTP RESPONSE 200
-[info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-01T09:10:29.599Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:10:29.601Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
- 
-[debug] [2020-04-01T09:10:30.014Z] <<< HTTP RESPONSE 200
-[info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-01T09:10:30.020Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
- 
-[debug] [2020-04-01T09:10:31.766Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.94 KB) for uploading
-[debug] [2020-04-01T09:10:31.925Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
- 
-[debug] [2020-04-01T09:10:32.623Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:10:32.626Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/0f846763-9c78-47b4-a6db-fd1773369998.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585734032&Signature=NrztQeAEoALjjrfcAabOECTaMhIme9NHBiWVk%2Fn611VJAgEUboZyrRahT5MYbF81mE258l1CuNJk2ivwEHihX4Dj%2BVR7c30GcwzduBO%2FqgaGuv06mXX1PMiXvebww2ghf4zMtzhZBMjbRvi77x6op3XnVq2v1t7nv3RpES6AlNFGGTvGsb77jdfO2uzCJV9wI8%2FAPjTq%2FoBZFmgQR2IwRiTRGOD6%2FavPAYtRcrDQMyNK5vBhJ0HpoaUNzaoItXHbNompzFrGJiorv9TogHvvQbanN1QP81gIKFvICtNbcP87GDogeHyAJhRwrdXe%2BFCZNMGotkuiX6jZzC7aWthHSw%3D%3D  
- <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T09:11:43.743Z] Error: read ECONNRESET
-    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
-[error] 
-[error] Error: Server Error. read ECONNRESET
-[debug] [2020-04-01T09:12:22.227Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:12:22.230Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-01T09:12:22.230Z] CLI Version:   7.16.1
-[debug] [2020-04-01T09:12:22.230Z] Platform:      linux
-[debug] [2020-04-01T09:12:22.230Z] Node Version:  v12.16.1
-[debug] [2020-04-01T09:12:22.230Z] Time:          Wed Apr 01 2020 15:12:22 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-01T09:12:22.230Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T09:12:22.230Z] 
-[debug] [2020-04-01T09:12:22.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T09:12:22.237Z] > authorizing via signed-in user
-[debug] [2020-04-01T09:12:22.237Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-01T09:12:22.240Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-01T09:12:23.857Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'react-redux-c02aa'...
-[info] 
-[info] i  deploying functions
-[debug] [2020-04-01T09:12:25.170Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "8"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.6.0",
-    "firebase-functions": "^3.3.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.1.6"
-  },
-  "private": true
-}
-[info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-01T09:12:25.172Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
- 
-[debug] [2020-04-01T09:12:25.173Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
- 
-[debug] [2020-04-01T09:12:27.202Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:12:27.302Z] <<< HTTP RESPONSE 200
-[info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-01T09:12:27.305Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
- 
-[debug] [2020-04-01T09:12:27.942Z] <<< HTTP RESPONSE 200
-[info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-01T09:12:27.949Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
- 
-[debug] [2020-04-01T09:12:29.943Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.94 KB) for uploading
-[debug] [2020-04-01T09:12:30.102Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
- 
-[debug] [2020-04-01T09:12:30.930Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T09:12:30.932Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/18fc76a3-ff12-47f5-8f33-934777f75f47.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585734150&Signature=L1lxGwePzsPpLqildMHwlWrrd0mi8zwWcHQe5a5K4BoRcbcNOqz2PhqovTngAN64SvsOHpTPnXe7i8V4CMv%2BtGdPX23c1GBe0v2rY8%2FstmRlpYUR82zaelK8rGhPKKq5z8jJAgOCLVCQ0b1e2OMsWtNeR%2F7LwAuyAK2Pr9qcaezBf5XN1zcvg8CEmcU7PRRJFQLqXNnXeXoDBWuue5JGK2RQPQxc%2F2xoA6c8vQjd4gyZaY1Ti0fkM9%2F5W8Nl86dTv1hX30Ad48EjWUiEe6ssrOfTqBJpGFOP8%2B35dFWyOpuO42Z5R4fibhK1cqZJKOT9lcpgIfdL%2BkrWUVDHEvPGGQ%3D%3D  
+[debug] [2020-04-02T15:28:40.052Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:28:40.055Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/9902aaa9-391c-49cb-a575-7fee7604fec7.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585843119&Signature=iptyn38g3P%2BLv8qQQJPuxj7WUDESQPmI2laFuyQSCIFG%2BjcQ5Y%2BdQ1%2FSif2TKjt7yaJToL0o30l0%2BZq%2BVjbTknRsWjmvSlFx6ItphN9bpfhjIoUEYsI%2FtYJ91csSwpD3BhUlzNgcHvgdtQSLp74f5x1Tt425YoYU4UgweTR6NAqJSsmFAm0HesDvs3Tw5aQw0PNZKRj0DkJY2wy9YkUg2f16FF1fEHpeUXKJv3%2FQa2nByBOq88iT6kUInpZo2qnHG5DlZupoEfqQoyPT9%2FmRm0Lo9Bb8XkQ9fcEUj5u7tZHIF2c5yAnLRbXkAbvu4QgtqrvDmBotLlt8o2lGYhg6gA%3D%3D  
  <request body omitted>
 [warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-01T09:13:15.859Z] Error: Client network socket disconnected before secure TLS connection was established
+[debug] [2020-04-02T15:28:50.697Z] Error: Client network socket disconnected before secure TLS connection was established
     at connResetException (internal/errors.js:604:14)
     at TLSSocket.onConnectEnd (_tls_wrap.js:1513:19)
     at Object.onceWrapper (events.js:417:28)
@@ -473,5 +144,152 @@
     at TLSSocket.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1204:12)
     at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-04-02T15:58:12.839Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T15:58:12.840Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-02T15:58:12.840Z] CLI Version:   7.16.1
+[debug] [2020-04-02T15:58:12.841Z] Platform:      linux
+[debug] [2020-04-02T15:58:12.841Z] Node Version:  v12.16.1
+[debug] [2020-04-02T15:58:12.841Z] Time:          Thu Apr 02 2020 21:58:12 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-02T15:58:12.841Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T15:58:12.841Z] 
+[debug] [2020-04-02T15:58:12.847Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-02T15:58:12.847Z] > authorizing via signed-in user
+[debug] [2020-04-02T15:58:12.847Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-02T15:58:12.850Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+
+[debug] [2020-04-02T15:58:14.560Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'react-redux-c02aa'...
+[info] 
+[info] i  deploying functions
+[debug] [2020-04-02T15:58:16.137Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2020-04-02T15:58:16.139Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2020-04-02T15:58:16.140Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2020-04-02T15:58:18.367Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:58:18.505Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2020-04-02T15:58:18.509Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+ 
+[debug] [2020-04-02T15:58:20.448Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2020-04-02T15:58:20.453Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+ 
+[debug] [2020-04-02T15:58:21.801Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (27.12 KB) for uploading
+[debug] [2020-04-02T15:58:21.949Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2020-04-02T15:58:22.987Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T15:58:22.989Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/2335f218-83b4-4cae-aaa8-6e9757596493.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585844902&Signature=nq%2F%2FVHwls6KJS3z8M6i2niLr2HHg%2BXSGqnSK5j7w5A3Dns1GHiaaMvLWmIoaSNHzCzBRCbvDrA7kLtKkhjH6qTz0nwAWSrwO6ZYCqgAiCnDn%2BXh8ejAEldZjlcvz%2BUWOqtLGSE5ac6dJwVU8ew5UBMM2GPd2YfN1i3aaAEEc9Wa004jx1xqt2VIU1iiaWy1m6t8hxpIAPyjKAhZT5sLRjI%2Ba97O%2F0Y%2Fu%2FE5z9AsUCJusGngmDl4krxAB%2BvZvb%2F61WnBs7wadBmrBcyi87TGVgEJ1m1DpJzUU2mJl7R9iu0cYC6VWDix%2FRgRmNAbIuIoXRm5LIzs4LShmdegOFve94g%3D%3D  
+ <request body omitted>
+[warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-04-02T15:58:33.854Z] Error: Client network socket disconnected before secure TLS connection was established
+    at connResetException (internal/errors.js:604:14)
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1513:19)
+    at Object.onceWrapper (events.js:417:28)
+    at TLSSocket.emit (events.js:323:22)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1204:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-04-02T16:09:12.086Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T16:09:12.088Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-02T16:09:12.088Z] CLI Version:   7.16.1
+[debug] [2020-04-02T16:09:12.088Z] Platform:      linux
+[debug] [2020-04-02T16:09:12.088Z] Node Version:  v10.19.0
+[debug] [2020-04-02T16:09:12.089Z] Time:          Thu Apr 02 2020 22:09:12 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-02T16:09:12.089Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T16:09:12.089Z] 
+[debug] [2020-04-02T16:09:12.096Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-02T16:09:12.096Z] > authorizing via signed-in user
+[debug] [2020-04-02T16:09:12.096Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-02T16:09:12.099Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-02T16:09:12.099Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-02T16:09:14.053Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T16:09:14.099Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+
+[debug] [2020-04-02T16:09:16.240Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'react-redux-c02aa'...
+[info] 
+[info] i  deploying functions
+[debug] [2020-04-02T16:09:18.757Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2020-04-02T16:09:18.759Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2020-04-02T16:09:18.760Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2020-04-02T16:09:21.324Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T16:09:21.456Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2020-04-02T16:09:21.459Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+ 
+[debug] [2020-04-02T16:09:22.329Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2020-04-02T16:09:22.334Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+ 
+[debug] [2020-04-02T16:09:24.833Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (27.12 KB) for uploading
+[debug] [2020-04-02T16:09:25.031Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2020-04-02T16:09:26.849Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-02T16:09:26.851Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/7334ca83-7198-4ef5-8e60-4c1ea474216b.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585845566&Signature=cVmlUthtIDykN3%2Bm78lf1H1%2Bi7br7A46fb0trKmVaS6N2IVEa7SwvtUNizxUIBjab8picLA6haakdRgC559Z2xUlVVERdzlQFQ0wsPtkwDC9NgZVeX%2BIfGEhZ8PFXm2wdicf8LUsw7lFXiBrLfDpPb30TDgqEbFz%2FGMfY8F6YKBABi9IfHZoAxZVW%2Fl42Yvv3D9GJTr%2FEMwVeLNEY6TZBNJqNGb0nunHp2GJ0EulOHiLKO2pVOSDFysLYsdgYELHXwg0yXsdemymd%2F7zRbTrQyuCeMo8%2BVtNVuVFaAMiZEXIOjl7htH9EpwrEBl8ITHg3wPMYaZYAUPZXkuLuhyLXQ%3D%3D  
+ <request body omitted>
+[warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-04-02T16:09:37.726Z] Error: Client network socket disconnected before secure TLS connection was established
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1095:19)
+    at Object.onceWrapper (events.js:286:20)
+    at TLSSocket.emit (events.js:203:15)
+    at TLSSocket.EventEmitter.emit (domain.js:448:20)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
 [error] 
 [error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
