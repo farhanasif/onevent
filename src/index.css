@@ -68,3 +68,20 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.sidenav .logo-container {
+  padding: 0 16px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  box-sizing: content-box;
+}
+
+.sidenav .logo-container i.material-icons {
+  line-height: inherit;
+}
+
+.brand-logo i.material-icons {
+  line-height: inherit;
+}

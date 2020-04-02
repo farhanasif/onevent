@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 
@@ -21,8 +21,9 @@ class SignedOutLinks extends Component {
                     <li><NavLink to="/signin">Login</NavLink></li>
                 </ul>
                 <ul id="nav-mobile" className="sidenav">
-                <li><NavLink to="/signup">Sign up</NavLink></li>
-                    <li><NavLink to="/signin">Login</NavLink></li>
+                    <li><Link to="/" className="logo-container">OnEvent<i className="material-icons left">spa</i></Link></li>
+                    <li><NavLink to="/signup">Sign up<i className="material-icons">mode_edit</i></NavLink></li>
+                    <li><NavLink to="/signin">Login<i className="material-icons">done</i></NavLink></li>
                 </ul>
                 <a data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
             </div>
