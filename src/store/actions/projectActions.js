@@ -10,10 +10,22 @@ export const createProject = (project) => {
             authorLastName: profile.lastName,
             authorId: uid,
             createdAt: new Date()
-        }).then(() => {
-            dispatch({
-                type: 'CREATE_PROJECT', project
+        }).then((doc) => {
+            firestore.collection('notifications').add({
+                content: 'Added a new project',
+                user: profile.firstName + ' ' + profile.lastName,
+                authorId: uid,
+                createdAt: new Date()
+            }).then(() => {
+                dispatch({
+                    type: 'CREATE_PROJECT', project
+                })
+            }).catch((err) => {
+                dispatch({
+                    type: 'CREATE_PROJECT_ERROR', err
+                })
             })
+            
         }).catch((err) => {
             dispatch({
                 type: 'CREATE_PROJECT_ERROR', err
