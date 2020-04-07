@@ -21,7 +21,7 @@ function App() {
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />
           <Route path="/create" component={CreateProject}/>
-          <Route path="/create" component={TableView} />
+          <Route path="/table" component={TableView} />
         </Switch>
       </div>
     </BrowserRouter>

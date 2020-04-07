@@ -86,3 +86,7 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
 .brand-logo i.material-icons {
   line-height: inherit;
 }
+
+i.icon-pink {
+  color: #ec407a;
+}
