@@ -1,29 +1,28 @@
-[debug] [2020-04-02T15:19:23.451Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T15:19:23.453Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-02T15:19:23.453Z] CLI Version:   7.16.1
-[debug] [2020-04-02T15:19:23.453Z] Platform:      linux
-[debug] [2020-04-02T15:19:23.453Z] Node Version:  v12.16.1
-[debug] [2020-04-02T15:19:23.454Z] Time:          Thu Apr 02 2020 21:19:23 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-02T15:19:23.454Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T15:19:23.454Z] 
-[debug] [2020-04-02T15:19:23.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-02T15:19:23.460Z] > authorizing via signed-in user
-[debug] [2020-04-02T15:19:23.460Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-02T15:19:23.462Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-04-02T15:19:23.462Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-04-02T15:19:24.605Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T15:19:24.658Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-02T15:19:26.842Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:22:23.850Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:22:23.852Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-04T09:22:23.853Z] CLI Version:   8.0.1
+[debug] [2020-04-04T09:22:23.853Z] Platform:      darwin
+[debug] [2020-04-04T09:22:23.853Z] Node Version:  v13.7.0
+[debug] [2020-04-04T09:22:23.854Z] Time:          Sat Apr 04 2020 15:22:23 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-04T09:22:23.854Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:22:23.855Z] 
+[debug] [2020-04-04T09:22:23.868Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-04T09:22:23.869Z] > authorizing via signed-in user
+[debug] [2020-04-04T09:22:23.869Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-04T09:22:23.873Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-04-04T09:22:25.444Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:22:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1321","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] 
 [info] === Deploying to 'react-redux-c02aa'...
 [info] 
 [info] i  deploying functions
-[debug] [2020-04-02T15:19:41.357Z] > [functions] package.json contents: {
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2020-04-04T09:22:30.740Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
+    "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
@@ -34,68 +33,67 @@
     "node": "8"
   },
   "dependencies": {
-    "firebase-admin": "^8.6.0",
+    "firebase-admin": "^8.9.0",
     "firebase-functions": "^3.3.0"
   },
   "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
     "firebase-functions-test": "^0.1.6"
   },
   "private": true
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-02T15:19:41.359Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+[debug] [2020-04-04T09:22:30.741Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
  
-[debug] [2020-04-02T15:19:41.360Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+[debug] [2020-04-04T09:22:30.742Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
  
-[debug] [2020-04-02T15:19:44.512Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T15:19:47.183Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:22:32.620Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:22:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:22:32.682Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:22:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-02T15:19:47.186Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+[debug] [2020-04-04T09:22:32.685Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
  
-[debug] [2020-04-02T15:19:48.119Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:22:33.323Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:22:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-02T15:19:48.124Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+[debug] [2020-04-04T09:22:33.328Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
  
-[debug] [2020-04-02T15:19:50.563Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.93 KB) for uploading
-[debug] [2020-04-02T15:19:51.184Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+[debug] [2020-04-04T09:22:35.173Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:22:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: packaged functions (39.62 KB) for uploading
+[debug] [2020-04-04T09:22:35.388Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
  
-[debug] [2020-04-02T15:19:52.847Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T15:19:52.849Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/03cf9497-0aca-4783-8285-52ef06f827c7.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585842592&Signature=Jg61cfXty5%2Bs78ZJwN2GHQiXpD82%2FW3EyrW3zdpY1EjuYkIdq%2FfYpgyY6o59g7wUMeI4FVouxu0Bh7W2FIuYyXufKgeYG4a9Ar0k%2FsCJIA1SMvCM2IewgHT5pMSHJIXSnBk1Ud0NvYTqyhC02CU8yc18bQ4Gdyb84Fe92RkpPWL2TdzAH4NW%2FpI%2B5KJ58ksXmdcTXX6lLW84ElSRt1ItMSZAd%2FBR14OBC6YPwK8IR0SE%2BnTwri6vV82JYtFNgey5QER13cJIqPrFs5LP3NJy3F%2Bnly0ota0eZuv6Bg%2FEKCl2j4PoWmbSIfEapK%2BZL7u%2FXp%2FiK6oHmDR4DqQNVQLgtw%3D%3D  
+[debug] [2020-04-04T09:22:36.702Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:22:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:22:36.703Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/752cbdfc-a7ea-42a8-94f1-1c7d2789d11b.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585993956&Signature=DEIUkfA08uq8Qr2Uw7LBHWi%2BLfitN24J1m1OlUsx8wtlWghPvHhIsOai4vBOyLnJn%2BpDq181HQMZW2qIlLm9iLqZnzoPVRVzz4BuWuPt2dDdwSahTqdCR2u2w5u4iZyNGVGsDs2IHS33qXFlaDM9I35NMDLaJdPX4JRSLrKT16D2XdhakJNVM42m3NczE1C8IGSZnRp1ewf62XMZUfOah8NHRpAh5HgXSRt7f3o4Xor3ifQDVIi7w8utk2WGMqeD6P%2BQFB57JycVm7auVlC9hbT4IEikzBgRWJUssbOtVblfqzyAZ9eIZ6ERC7FsNOa8wign7nEFUla275igSChEPw%3D%3D  
  <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-02T15:20:03.542Z] Error: Client network socket disconnected before secure TLS connection was established
-    at connResetException (internal/errors.js:604:14)
-    at TLSSocket.onConnectEnd (_tls_wrap.js:1513:19)
-    at Object.onceWrapper (events.js:417:28)
-    at TLSSocket.emit (events.js:323:22)
-    at TLSSocket.EventEmitter.emit (domain.js:482:12)
-    at endReadableNT (_stream_readable.js:1204:12)
-    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[warn] ⚠  functions: Upload Error: Server Error. read ETIMEDOUT
+[debug] [2020-04-04T09:23:52.743Z] Error: read ETIMEDOUT
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
 [error] 
-[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-02T15:28:26.537Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T15:28:26.539Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-02T15:28:26.539Z] CLI Version:   7.16.1
-[debug] [2020-04-02T15:28:26.539Z] Platform:      linux
-[debug] [2020-04-02T15:28:26.539Z] Node Version:  v12.16.1
-[debug] [2020-04-02T15:28:26.539Z] Time:          Thu Apr 02 2020 21:28:26 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-02T15:28:26.539Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T15:28:26.539Z] 
-[debug] [2020-04-02T15:28:26.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-02T15:28:26.546Z] > authorizing via signed-in user
-[debug] [2020-04-02T15:28:26.546Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-02T15:28:26.548Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-02T15:28:29.855Z] <<< HTTP RESPONSE 200
+[error] Error: Server Error. read ETIMEDOUT
+[debug] [2020-04-04T09:24:56.556Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:24:56.561Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-04T09:24:56.561Z] CLI Version:   8.0.1
+[debug] [2020-04-04T09:24:56.561Z] Platform:      darwin
+[debug] [2020-04-04T09:24:56.562Z] Node Version:  v13.7.0
+[debug] [2020-04-04T09:24:56.563Z] Time:          Sat Apr 04 2020 15:24:56 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-04T09:24:56.564Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:24:56.564Z] 
+[debug] [2020-04-04T09:24:56.577Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-04T09:24:56.578Z] > authorizing via signed-in user
+[debug] [2020-04-04T09:24:56.578Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-04T09:24:56.581Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-04-04T09:24:58.123Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:24:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1323","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] 
 [info] === Deploying to 'react-redux-c02aa'...
 [info] 
 [info] i  deploying functions
-[debug] [2020-04-02T15:28:31.397Z] > [functions] package.json contents: {
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2020-04-04T09:25:05.881Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
+    "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
@@ -106,68 +104,67 @@
     "node": "8"
   },
   "dependencies": {
-    "firebase-admin": "^8.6.0",
+    "firebase-admin": "^8.9.0",
     "firebase-functions": "^3.3.0"
   },
   "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
     "firebase-functions-test": "^0.1.6"
   },
   "private": true
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-02T15:28:31.399Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+[debug] [2020-04-04T09:25:05.883Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
  
-[debug] [2020-04-02T15:28:31.399Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+[debug] [2020-04-04T09:25:05.884Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
  
-[debug] [2020-04-02T15:28:34.245Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T15:28:34.924Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:25:07.704Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:25:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:25:07.789Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:25:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-02T15:28:34.926Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+[debug] [2020-04-04T09:25:07.790Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
  
-[debug] [2020-04-02T15:28:36.026Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:25:08.316Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:25:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-02T15:28:36.032Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+[debug] [2020-04-04T09:25:08.321Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
  
-[debug] [2020-04-02T15:28:38.445Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (26.93 KB) for uploading
-[debug] [2020-04-02T15:28:38.590Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+[debug] [2020-04-04T09:25:13.169Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:25:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: packaged functions (39.6 KB) for uploading
+[debug] [2020-04-04T09:25:13.388Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
  
-[debug] [2020-04-02T15:28:40.052Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T15:28:40.055Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/9902aaa9-391c-49cb-a575-7fee7604fec7.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585843119&Signature=iptyn38g3P%2BLv8qQQJPuxj7WUDESQPmI2laFuyQSCIFG%2BjcQ5Y%2BdQ1%2FSif2TKjt7yaJToL0o30l0%2BZq%2BVjbTknRsWjmvSlFx6ItphN9bpfhjIoUEYsI%2FtYJ91csSwpD3BhUlzNgcHvgdtQSLp74f5x1Tt425YoYU4UgweTR6NAqJSsmFAm0HesDvs3Tw5aQw0PNZKRj0DkJY2wy9YkUg2f16FF1fEHpeUXKJv3%2FQa2nByBOq88iT6kUInpZo2qnHG5DlZupoEfqQoyPT9%2FmRm0Lo9Bb8XkQ9fcEUj5u7tZHIF2c5yAnLRbXkAbvu4QgtqrvDmBotLlt8o2lGYhg6gA%3D%3D  
+[debug] [2020-04-04T09:25:14.440Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:25:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:25:14.441Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/f433f9c4-5df6-43c4-a72d-bdfa539747b3.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585994114&Signature=t8z%2BrMJaQKxNAvqx49ejIrGvrWwhgzK1s%2Fer4iF%2BHBSugkMrJa0YRQCfs3Ztz6LlJ4d6OlffH%2FWWKtsJ%2BJBA4mUAWqVTTQ%2F7kQ89bUlMIIuI5hY083%2FMS%2BlO%2BmxXc7gMVrTzg9%2F5C0FBcNTOL6oMGDk%2F89efF5%2B6t52BUrCslz9AC02W1zcYjnu%2BVjdzPqn0kqwJ5Vg3OvVizdYHrPy3ksPWNMOJ%2B9ClTwrVxxp%2FFKIMApF0F%2BtnfI72fLCw6A1Yo%2FMH7plkKdYKx4bdl5QCbzbqPI%2B1oyDnb0P4%2BhM0FRpoFV5Kv95Jp3lOpPHqgo9MZSJgLyLtKOemjRfMco%2FKcg%3D%3D  
  <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-02T15:28:50.697Z] Error: Client network socket disconnected before secure TLS connection was established
-    at connResetException (internal/errors.js:604:14)
-    at TLSSocket.onConnectEnd (_tls_wrap.js:1513:19)
-    at Object.onceWrapper (events.js:417:28)
-    at TLSSocket.emit (events.js:323:22)
-    at TLSSocket.EventEmitter.emit (domain.js:482:12)
-    at endReadableNT (_stream_readable.js:1204:12)
-    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[warn] ⚠  functions: Upload Error: Server Error. read ETIMEDOUT
+[debug] [2020-04-04T09:26:28.863Z] Error: read ETIMEDOUT
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
 [error] 
-[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-02T15:58:12.839Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T15:58:12.840Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-02T15:58:12.840Z] CLI Version:   7.16.1
-[debug] [2020-04-02T15:58:12.841Z] Platform:      linux
-[debug] [2020-04-02T15:58:12.841Z] Node Version:  v12.16.1
-[debug] [2020-04-02T15:58:12.841Z] Time:          Thu Apr 02 2020 21:58:12 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-02T15:58:12.841Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T15:58:12.841Z] 
-[debug] [2020-04-02T15:58:12.847Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-02T15:58:12.847Z] > authorizing via signed-in user
-[debug] [2020-04-02T15:58:12.847Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-02T15:58:12.850Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-02T15:58:14.560Z] <<< HTTP RESPONSE 200
+[error] Error: Server Error. read ETIMEDOUT
+[debug] [2020-04-04T09:28:16.089Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:28:16.091Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-04T09:28:16.092Z] CLI Version:   8.0.1
+[debug] [2020-04-04T09:28:16.092Z] Platform:      darwin
+[debug] [2020-04-04T09:28:16.092Z] Node Version:  v13.7.0
+[debug] [2020-04-04T09:28:16.093Z] Time:          Sat Apr 04 2020 15:28:16 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-04T09:28:16.093Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:28:16.094Z] 
+[debug] [2020-04-04T09:28:16.106Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-04T09:28:16.106Z] > authorizing via signed-in user
+[debug] [2020-04-04T09:28:16.107Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-04T09:28:16.110Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-04-04T09:28:17.854Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:28:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1344","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] 
 [info] === Deploying to 'react-redux-c02aa'...
 [info] 
 [info] i  deploying functions
-[debug] [2020-04-02T15:58:16.137Z] > [functions] package.json contents: {
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2020-04-04T09:28:23.433Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
+    "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
@@ -178,72 +175,67 @@
     "node": "8"
   },
   "dependencies": {
-    "firebase-admin": "^8.6.0",
+    "firebase-admin": "^8.9.0",
     "firebase-functions": "^3.3.0"
   },
   "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
     "firebase-functions-test": "^0.1.6"
   },
   "private": true
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-02T15:58:16.139Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+[debug] [2020-04-04T09:28:23.435Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
  
-[debug] [2020-04-02T15:58:16.140Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+[debug] [2020-04-04T09:28:23.435Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
  
-[debug] [2020-04-02T15:58:18.367Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T15:58:18.505Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:28:25.698Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:28:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:28:25.739Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:28:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-02T15:58:18.509Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+[debug] [2020-04-04T09:28:25.741Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
  
-[debug] [2020-04-02T15:58:20.448Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:28:26.312Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:28:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-02T15:58:20.453Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+[debug] [2020-04-04T09:28:26.317Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
  
-[debug] [2020-04-02T15:58:21.801Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (27.12 KB) for uploading
-[debug] [2020-04-02T15:58:21.949Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+[debug] [2020-04-04T09:28:28.160Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:28:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: packaged functions (39.59 KB) for uploading
+[debug] [2020-04-04T09:28:28.351Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
  
-[debug] [2020-04-02T15:58:22.987Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T15:58:22.989Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/2335f218-83b4-4cae-aaa8-6e9757596493.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585844902&Signature=nq%2F%2FVHwls6KJS3z8M6i2niLr2HHg%2BXSGqnSK5j7w5A3Dns1GHiaaMvLWmIoaSNHzCzBRCbvDrA7kLtKkhjH6qTz0nwAWSrwO6ZYCqgAiCnDn%2BXh8ejAEldZjlcvz%2BUWOqtLGSE5ac6dJwVU8ew5UBMM2GPd2YfN1i3aaAEEc9Wa004jx1xqt2VIU1iiaWy1m6t8hxpIAPyjKAhZT5sLRjI%2Ba97O%2F0Y%2Fu%2FE5z9AsUCJusGngmDl4krxAB%2BvZvb%2F61WnBs7wadBmrBcyi87TGVgEJ1m1DpJzUU2mJl7R9iu0cYC6VWDix%2FRgRmNAbIuIoXRm5LIzs4LShmdegOFve94g%3D%3D  
+[debug] [2020-04-04T09:28:29.571Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:28:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:28:29.575Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/1f561878-a519-4783-b8cf-d7a6f7047f09.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585994309&Signature=U%2F1hiTBLyKfwMzQHSEgUNYDnyJfhJnPvV7czGcHfz3ONZsCbgBYAXkACOmpBAfZ%2FwwCI3EAbzPhvB91qP1DRx487wLN7GukNKv10O7CsXT8fpVxVy9URxJJIQN94RWbtUj9Sx2eDG2wKW4tRCRO0t1ptvX27uaNl91TjpdA7Kb4rKENLnT%2BZawz4wPq116qkmnVe1teZ3Sa6wQSf3zrGVyMaR5Fq09WOM6lcpL9RzoLQGkVm4AT1oqXargXyzbTSs1wuXHWhhfnLCd7PA0agsYJn3VartA1dkL6KR4BsEAyA%2BN8bcrijuBv%2BoTaIlrDhWeply0ss5eopyiqbOmDLMQ%3D%3D  
  <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-02T15:58:33.854Z] Error: Client network socket disconnected before secure TLS connection was established
-    at connResetException (internal/errors.js:604:14)
-    at TLSSocket.onConnectEnd (_tls_wrap.js:1513:19)
-    at Object.onceWrapper (events.js:417:28)
-    at TLSSocket.emit (events.js:323:22)
-    at TLSSocket.EventEmitter.emit (domain.js:482:12)
-    at endReadableNT (_stream_readable.js:1204:12)
-    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[warn] ⚠  functions: Upload Error: Server Error. read ECONNRESET
+[debug] [2020-04-04T09:29:09.474Z] Error: read ECONNRESET
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
 [error] 
-[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-02T16:09:12.086Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T16:09:12.088Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
-[debug] [2020-04-02T16:09:12.088Z] CLI Version:   7.16.1
-[debug] [2020-04-02T16:09:12.088Z] Platform:      linux
-[debug] [2020-04-02T16:09:12.088Z] Node Version:  v10.19.0
-[debug] [2020-04-02T16:09:12.089Z] Time:          Thu Apr 02 2020 22:09:12 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-04-02T16:09:12.089Z] ----------------------------------------------------------------------
-[debug] [2020-04-02T16:09:12.089Z] 
-[debug] [2020-04-02T16:09:12.096Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-02T16:09:12.096Z] > authorizing via signed-in user
-[debug] [2020-04-02T16:09:12.096Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2020-04-02T16:09:12.099Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-04-02T16:09:12.099Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-04-02T16:09:14.053Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T16:09:14.099Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
-
-[debug] [2020-04-02T16:09:16.240Z] <<< HTTP RESPONSE 200
+[error] Error: Server Error. read ECONNRESET
+[debug] [2020-04-04T09:29:46.584Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:29:46.589Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-04T09:29:46.589Z] CLI Version:   8.0.1
+[debug] [2020-04-04T09:29:46.589Z] Platform:      darwin
+[debug] [2020-04-04T09:29:46.589Z] Node Version:  v13.7.0
+[debug] [2020-04-04T09:29:46.592Z] Time:          Sat Apr 04 2020 15:29:46 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-04-04T09:29:46.592Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T09:29:46.592Z] 
+[debug] [2020-04-04T09:29:46.606Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-04T09:29:46.606Z] > authorizing via signed-in user
+[debug] [2020-04-04T09:29:46.607Z] [iam] checking project react-redux-c02aa for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-04T09:29:46.610Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-redux-c02aa:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-04-04T09:29:47.197Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:29:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=230","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] 
 [info] === Deploying to 'react-redux-c02aa'...
 [info] 
 [info] i  deploying functions
-[debug] [2020-04-02T16:09:18.757Z] > [functions] package.json contents: {
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2020-04-04T09:29:53.086Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
+    "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
@@ -254,42 +246,39 @@
     "node": "8"
   },
   "dependencies": {
-    "firebase-admin": "^8.6.0",
+    "firebase-admin": "^8.9.0",
     "firebase-functions": "^3.3.0"
   },
   "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
     "firebase-functions-test": "^0.1.6"
   },
   "private": true
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-04-02T16:09:18.759Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
+[debug] [2020-04-04T09:29:53.088Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/cloudfunctions.googleapis.com  
  
-[debug] [2020-04-02T16:09:18.760Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
+[debug] [2020-04-04T09:29:53.089Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/react-redux-c02aa/services/runtimeconfig.googleapis.com  
  
-[debug] [2020-04-02T16:09:21.324Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T16:09:21.456Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:29:54.905Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:29:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:29:54.975Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:29:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-04-02T16:09:21.459Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
+[debug] [2020-04-04T09:29:54.979Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-redux-c02aa/adminSdkConfig  
  
-[debug] [2020-04-02T16:09:22.329Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-04T09:29:55.486Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:29:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2020-04-02T16:09:22.334Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
+[debug] [2020-04-04T09:29:55.491Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/react-redux-c02aa/configs  
  
-[debug] [2020-04-02T16:09:24.833Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (27.12 KB) for uploading
-[debug] [2020-04-02T16:09:25.031Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
+[debug] [2020-04-04T09:29:55.996Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:29:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: packaged functions (39.59 KB) for uploading
+[debug] [2020-04-04T09:29:56.350Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/react-redux-c02aa/locations/us-central1/functions:generateUploadUrl  
  
-[debug] [2020-04-02T16:09:26.849Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-02T16:09:26.851Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/7334ca83-7198-4ef5-8e60-4c1ea474216b.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585845566&Signature=cVmlUthtIDykN3%2Bm78lf1H1%2Bi7br7A46fb0trKmVaS6N2IVEa7SwvtUNizxUIBjab8picLA6haakdRgC559Z2xUlVVERdzlQFQ0wsPtkwDC9NgZVeX%2BIfGEhZ8PFXm2wdicf8LUsw7lFXiBrLfDpPb30TDgqEbFz%2FGMfY8F6YKBABi9IfHZoAxZVW%2Fl42Yvv3D9GJTr%2FEMwVeLNEY6TZBNJqNGb0nunHp2GJ0EulOHiLKO2pVOSDFysLYsdgYELHXwg0yXsdemymd%2F7zRbTrQyuCeMo8%2BVtNVuVFaAMiZEXIOjl7htH9EpwrEBl8ITHg3wPMYaZYAUPZXkuLuhyLXQ%3D%3D  
+[debug] [2020-04-04T09:29:57.123Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Apr 2020 09:29:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-04T09:29:57.124Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-18f621c7-bd4c-469d-9abe-a51e19a198eb/0343cb15-6ab9-469b-bd19-486f0186c75a.zip?GoogleAccessId=service-662703363063@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585994396&Signature=p7Gfba5YfA1pMFYaW7RtWJo%2FuySinMVNefkdS1v4YtfqBy3ULHDgQwQgrtcih4bbHhwWrhZTtHRETs7YLejD1d58ZRg2plfDwCn81z7GJ4jxo2kfRPrBpfvKLipX8M6Uy1I264sbTNnQhoivTegtReYmbCRM5UBeL0vuGlydIy4kQDu16wvbI%2BeI2Y0j7fe1mAedkxm1L55h%2BASX4wicaGY2b9wzhQEEOkLXIMOZ8BaL2BJ35LRS4mPGRHMKj3qIYxuYiiJPXEBYuZ8V7ZmxPRYqrAcONSvmAPbiS9b2s3Fg04rFs405MrHQo6GKIxJusDg1ypYbnDx2eq%2FA7d0AlA%3D%3D  
  <request body omitted>
-[warn] ⚠  functions: Upload Error: Server Error. Client network socket disconnected before secure TLS connection was established
-[debug] [2020-04-02T16:09:37.726Z] Error: Client network socket disconnected before secure TLS connection was established
-    at TLSSocket.onConnectEnd (_tls_wrap.js:1095:19)
-    at Object.onceWrapper (events.js:286:20)
-    at TLSSocket.emit (events.js:203:15)
-    at TLSSocket.EventEmitter.emit (domain.js:448:20)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)
+[warn] ⚠  functions: Upload Error: Server Error. read ETIMEDOUT
+[debug] [2020-04-04T09:31:13.286Z] Error: read ETIMEDOUT
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
 [error] 
-[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
+[error] Error: Server Error. read ETIMEDOUT
