@@ -17,11 +17,13 @@ class SignedOutLinks extends Component {
         return(
             <div className="container">
                 <ul className="right hide-on-med-and-down">
+                    <li><NavLink to="/table">Table</NavLink></li>
                     <li><NavLink to="/signup">Sign up</NavLink></li>
                     <li><NavLink to="/signin">Login</NavLink></li>
                 </ul>
                 <ul id="nav-mobile" className="sidenav">
                     <li><Link to="/" className="logo-container">OnEvent<i className="material-icons left">spa</i></Link></li>
+                    <li><NavLink to="/table">Table<i className="material-icons">mode_edit</i></NavLink></li>
                     <li><NavLink to="/signup">Sign up<i className="material-icons">mode_edit</i></NavLink></li>
                     <li><NavLink to="/signin">Login<i className="material-icons">done</i></NavLink></li>
                 </ul>

@@ -6,6 +6,7 @@ import ProjectDetails from './components/projects/ProjectDetails';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import CreateProject from './components/projects/CreateProject';
+import TableView from './components/common/TableView';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={SignUp} />
           <Route path="/create" component={CreateProject}/>
+          <Route path="/create" component={TableView} />
         </Switch>
       </div>
     </BrowserRouter>
