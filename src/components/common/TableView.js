@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createCast } from '../../store/actions/castActions';
 import { Redirect } from 'react-router-dom';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
+
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 
@@ -17,7 +20,7 @@ class TableView extends Component {
 
     componentDidMount() {
         var elem = document.querySelector(".collapsible");
-        var instance = M.Collapsible.init(elem, {
+        M.Collapsible.init(elem, {
             accordion: false
           });
     }
@@ -29,11 +32,11 @@ class TableView extends Component {
     }
 
     render() {
-        const { totaldata, loaded, mock } = this.state;
-        console.log(mock);
-        const { authError,auth } = this.props;
+        
+        const { auth, casts } = this.props;
         if(auth.uid) return <Redirect to="/" />
-
+        let totaldata = casts ? casts.length : 0;
+        console.log(casts);
         return (
             <div className="container">
                 <ul className="collapsible">
@@ -61,9 +64,11 @@ class TableView extends Component {
 
 
 const mapStateToProps = (state) => {
+    //console.log(state)
     return{
         authError: state.auth.authError,
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        casts: state.firestore.ordered.casts,
     }
 }
   
@@ -73,4 +78,11 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
   
-export default connect(mapStateToProps, mapDispatchToProps)(TableView)
+export default compose(
+    connect(mapStateToProps, mapDispatchToProps),
+    firestoreConnect([
+        {
+            collection: 'casts'
+        }
+    ])
+)(TableView);
