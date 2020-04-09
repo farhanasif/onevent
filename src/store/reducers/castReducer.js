@@ -6,7 +6,7 @@ const initState = {
 const castReducer = (state = initState, action) => {
     switch(action.type){
         case 'CREATE_CAST':
-            console.log('created CAST', action.cast);
+            console.log('created CAST upload finished');
             return state;
         case 'CREATE_PROJECT_ERROR':
             console.log('error created cast', action.err);

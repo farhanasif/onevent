@@ -1,27 +1,23 @@
 export const createCast = (casts) => {
     return (dispatch, getState, { getFirebase, getFirestore}) => {
-        console.log(casts);
-        dispatch({
-            type: 'CREATE_CAST', casts
-        })
-        //make async call to database
-        // const firestore = getFirestore();
 
-        // const batch = firestore.batch();
-        
-        
-        // firestore.collection('projects').add({
-        //     ...cast
-        // }).then(() => {
-        //     dispatch({
-        //         type: 'CREATE_CAST', cast
-        //     })
-            
-        // }).catch((err) => {
-        //     dispatch({
-        //         type: 'CREATE_CAST_ERROR', err
-        //     })
-        // })
-        
+        const firestore = getFirestore();
+
+        casts.map(cast => {
+            console.log(cast.first_name);
+            firestore.collection('casts').add({
+                cast
+            }).then((doc) => {
+                console.log(doc)
+                
+            }).catch((err) => {
+                console.log(err)
+            })
+        })
+
+        dispatch({
+            type: 'CREATE_CAST'
+        })
+
     }
 }

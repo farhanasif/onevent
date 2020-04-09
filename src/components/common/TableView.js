@@ -47,7 +47,8 @@ class TableView extends Component {
                         <div className="col s12 m6 ">
                             <div className="card">
                                 <div className="card-content">
-                                    <a className="btn waves-effect waves-light pink lighten-1">Load data</a>
+                                    {totaldata < 1 ? <a className="btn waves-effect waves-light pink lighten-1" onClick={this.handleLoaddata}>Load data</a> : <div />}
+                                    
                                     <p>Total data in table: {totaldata}</p>
                                 </div>
                             </div>
